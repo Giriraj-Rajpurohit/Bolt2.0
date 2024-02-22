@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="index2.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="logo.jpeg" alt="" />
+      <div id="nav-part2">
+        <h4><a href="index.html">Home</a></h4>
+        <h4 style="width: fit-content"><a href="#">Find a Doctor</a></h4>
+        <h4 style="width: 200px"><a href="index2.html">Book Appointment</a></h4>
+        <h4><a href="#">Contact</a></h4>
+      </div>
+    </nav>
+    <div id="appointimg" style="margin-top: 125px;">
+      <img src="banner2.jpeg" />
+    </div>
+    <div class="appointcontent">
+      <div class="appointform">
+        <div class="appointdesc">
+          <h1 style="color: #1f2b6c; text-align: left">Book An Appointment</h1>
+          <p style="font-size: x-large; margin-top: 5px">
+            "Welcome to our streamlined appointment booking portal, where your
+            healthcare needs meet convenience! With just a few clicks, you can
+            schedule your next appointment hassle-free. Our user-friendly
+            interface ensures a seamless booking experience, allowing you to
+            select your preferred date, time, and specialist with ease.
+          </p>
+          <form action="" method="POST">
+            <table>
+              <tr>
+                <td><input type="text" placeholder="Name" name="Name" /></td>
+                <td>
+                  <select>
+                    <option value="Gender" name="sex">Gender</option>
+                    <option value="male" name="sex">Male</option>
+                    <option value="female" name="sex">Female</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="email" placeholder="Email" name="email" /></td>
+                <td><input type="tel" placeholder="Phone" name="tel" /></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <input
+                    type="datetime-local"
+                    placeholder="Date"
+                    name="date-time"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <select>
+                    <option value="">Department</option>
+                    <option value="">Cardiology</option>
+                    <option value="">Try</option>
+                    <option value="">Check</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="">Doctor</option>
+                    <option value="">Public</option>
+                    <option value="">Private</option>
+                  </select>
+                </td>
+              </tr>
+              <tr rowspan="4">
+                <td colspan="2">
+                  <textarea
+                    placeholder="Message / Symptoms from Model"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr></tr>
+              <tr></tr>
+              <tr></tr>
+              <tr>
+                <td colspan="2">
+                  <input
+                    style="
+                      background-color: #bfd2f8;
+                      color: #1f2b6c;
+                      font-weight: bold;
+                    "
+                    type="submit"
+                    value="SUBMIT"
+                  />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+      <div id="timingimg">
+        <img src="hours.jpeg" />
+      </div>
+    </div>
+    <h1 class="infof">GET IN TOUCH</h1>
+
+    <div class="outer">
+      <div class="card first">
+        <i class="fa-solid fa-phone-volume"></i>
+        <p class="up">EMERGENCY</p>
+        <p class="low">(+91) 6388258465</p>
+        <p class="low">(+91) 8299191961</p>
+      </div>
+      <div class="card sec">
+        <i class="fa-solid fa-location-dot"></i>
+        <p class="up">LOCATION</p>
+        <p class="low">Near SMV BLOCK</p>
+        <p class="low">VIT Vellore</p>
+      </div>
+      <div class="card third">
+        <i class="fa-regular fa-envelope"></i>
+        <p class="up">EMAIL</p>
+        <p class="low">vit.student.ac.in</p>
+        <p class="low">vit.student.ac.in</p>
+      </div>
+      <div class="card fourth">
+        <i class="fa-solid fa-clock"></i>
+        <p class="up">WORKING HOURS</p>
+        <p class="low">Mon-Sat 09:00-20:00</p>
+        <p class="low">Sunday Emergency Only</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+   
+    <div id="main">
+        <div id="page1">
+            <nav>
+                <img src="logo.jpeg" alt="" />
+                <div id="nav-part2">
+                  <h4><a href="#">Home</a></h4>
+                  <h4 style="width: fit-content"><a href="#" >Find a Doctor</a></h4>
+                  <h4 style="width: 200px;"><a href="index2.html">Book Appointment</a></h4>
+                  <h4><a href="#" onclick="scrollToFooter()">Contact</a></h4> <!-- Call scrollToFooter() function -->
+                </div>
+            </nav>
+            
+            
+                <img src="banner.jpeg" style="width: 100vw; margin-top: 0px;">
+              
+        </div>
+        <div id="page2-bottom" style="padding-bottom: 20px;">
+                <div id="p2bl">
+                <h1>Monitor and assess your health symptoms regularly to ensure your well-being.
+                </h1>
+                <button style="height: 100px; width: 200px;border-radius: 50px; margin-top: 50px; margin-left: 200px; background-color:#1f2b6c ; color: white;z-index: 2;position: absolute;" onclick="redirectToServer()">CLICK HERE</button>
+                <script>
+                    function redirectToServer() {
+                      // Redirect to the Flask application running on localhost
+                      window.location.href = 'http://127.0.0.1:5000';
+                    }
+                  </script>
+                  
+                </div>
+                <div id="p2br">
+                    <img src="logo2.jpeg" alt="">
+                </div>
+        </div>
+        <div id="page5"></div>
+    </div>
+    <div id="footer" style="height: 1000px;"> <!-- Added height to footer for demonstration -->
+        <div style="width:15vw; display: flex; flex-direction: column;">
+            <p style="font-weight: bold;">CHETINAD</p>
+            <p>Leading the way in Medical</p>
+        </div>
+        <div style="width:15vw; ; display: flex; flex-direction: column;">
+            <p style="font-weight: bold;">CONTACT US</p>
+            <div style="margin-top: 25px; line-height: 2;"><p>Call: (+254) 717 783 146</p>
+                <p>Email: medin@gmail.com</p>
+                <p>Address: 0123 Some place</p>
+                <p>Some country</p></div>
+        </div>
+        <div style="width:15vw; display: flex; flex-direction: column;">
+            <p style="font-weight: bold;">CONTACT US</p>
+            <div style="margin-top: 25px; line-height: 2;"><p>Call: (+254) 717 783 146</p>
+                <p>Email: medin@gmail.com</p>
+                <p>Address: 0123 Some place</p>
+                <p>Some country</p></div>
+    </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        function scrollToFooter() {
+            // Scroll to the footer section
+            document.getElementById("footer").scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
