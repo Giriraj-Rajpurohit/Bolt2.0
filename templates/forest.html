@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Health Status Prediction</title>
+
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='forest.css') }}">
+
+</head>
+
+<body>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="heading">Health Status</h1>
+      <div class="row center">
+        <h5 class="sub-heading">Predict the severity of your sickness</h5>
+      </div>
+
+      <div class="row">
+        <form action='/predict' method="POST" class="col s12">
+          <label for="Fever">Fever (Fahrenheit):</label>
+          <input type="number" id="fever" name="fever" placeholder="Enter temperature">
+          <label for="Cough">Cough:</label>
+          <select id="cough" name="cough">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+          <label for="Fatigue">Fatigue:</label>
+          <select id="fatigue" name="fatigue">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+          <label for="Difficulty-in-Breathing">Difficulty in Breathing:</label>
+          <select id="breathing" name="breathing">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+          <label for="Age">Age:</label>
+          <input type="number" id="age" name="age" maxlength="2">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <div class="row center">
+            <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Display the prediction message -->
+  <div class="container message">
+    {% if message %}
+      <h3>{{ message }}</h3>
+    {% endif %}
+  </div>
+</body>
+</html>
